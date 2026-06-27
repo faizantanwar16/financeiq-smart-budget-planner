@@ -3,7 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend,
 } from 'recharts';
 
-const COLORS = ['#378ADD', '#D85A30', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
+const COLORS = ['accent', '#D85A30', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'];
 
 const DashboardCharts = ({ transactions = [] }) => {
   // Category breakdown for pie chart

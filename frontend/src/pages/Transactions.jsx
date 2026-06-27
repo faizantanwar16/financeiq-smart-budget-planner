@@ -39,7 +39,7 @@ const Transactions = () => {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="bg-[#378ADD] text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
+          className="bg-[#accent] text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
         >
           {showForm ? 'Cancel' : '+ Add Transaction'}
         </button>
@@ -53,7 +53,7 @@ const Transactions = () => {
             <div>
               <label className="text-xs text-gray-500 mb-1 block">Type</label>
               <select
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#378ADD]"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#accent]"
                 value={form.type}
                 onChange={(e) => setForm({ ...form, type: e.target.value, category: '' })}
               >
@@ -67,7 +67,7 @@ const Transactions = () => {
               <input
                 type="number"
                 placeholder="0.00"
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#378ADD]"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#accent]"
                 value={form.amount}
                 onChange={(e) => setForm({ ...form, amount: e.target.value })}
                 required
@@ -77,7 +77,7 @@ const Transactions = () => {
             <div>
               <label className="text-xs text-gray-500 mb-1 block">Category</label>
               <select
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#378ADD]"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#accent]"
                 value={form.category}
                 onChange={(e) => setForm({ ...form, category: e.target.value })}
                 required
@@ -96,7 +96,7 @@ const Transactions = () => {
               <label className="text-xs text-gray-500 mb-1 block">Date</label>
               <input
                 type="date"
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#378ADD]"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#accent]"
                 value={form.date}
                 onChange={(e) => setForm({ ...form, date: e.target.value })}
                 required
@@ -108,7 +108,7 @@ const Transactions = () => {
               <input
                 type="text"
                 placeholder="e.g. Lunch at college"
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#378ADD]"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#accent]"
                 value={form.note}
                 onChange={(e) => setForm({ ...form, note: e.target.value })}
               />
@@ -118,7 +118,7 @@ const Transactions = () => {
               <button
                 type="submit"
                 disabled={createTransaction.isPending}
-                className="bg-[#378ADD] text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
+                className="bg-[#accent] text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
               >
                 {createTransaction.isPending ? 'Saving...' : 'Save Transaction'}
               </button>
