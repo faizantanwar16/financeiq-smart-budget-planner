@@ -5,7 +5,7 @@ const categorySchema = new mongoose.Schema({
   name: { type: String, required: true },
   type: { type: String, enum: ['income', 'expense'], required: true },
   icon: { type: String, default: 'wallet' },
-  color: { type: String, default: '#378ADD' },
+  color: { type: String, default: 'accent' },
   monthlyBudget: { type: Number, default: 0 },
 }, { timestamps: true });
 
