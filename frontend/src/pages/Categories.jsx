@@ -42,7 +42,7 @@ const Categories = () => {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="bg-[#accent] text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
+          className="bg-accent text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
         >
           {showForm ? 'Cancel' : '+ Add Category'}
         </button>
@@ -97,7 +97,7 @@ const Categories = () => {
                     type="button"
                     onClick={() => setForm({ ...form, icon })}
                     className={`w-9 h-9 rounded-lg text-lg flex items-center justify-center border transition-all ${
-                      form.icon === icon ? 'border-[#accent] bg-blue-50' : 'border-gray-200 hover:border-gray-300'
+                      form.icon === icon ? 'border-accent bg-blue-50' : 'border-gray-200 hover:border-gray-300'
                     }`}
                   >
                     {icon}
@@ -127,7 +127,7 @@ const Categories = () => {
               <button
                 type="submit"
                 disabled={createCategory.isPending}
-                className="bg-[#accent] text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
+                className="bg-accent text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
               >
                 {createCategory.isPending ? 'Saving...' : 'Save Category'}
               </button>

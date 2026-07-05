@@ -39,7 +39,7 @@ const Transactions = () => {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="bg-[#accent] text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
+          className="bg-accent text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90"
         >
           {showForm ? 'Cancel' : '+ Add Transaction'}
         </button>
@@ -118,7 +118,7 @@ const Transactions = () => {
               <button
                 type="submit"
                 disabled={createTransaction.isPending}
-                className="bg-[#accent] text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
+                className="bg-accent text-white px-6 py-2 rounded-xl text-sm font-medium hover:opacity-90 disabled:opacity-50"
               >
                 {createTransaction.isPending ? 'Saving...' : 'Save Transaction'}
               </button>
